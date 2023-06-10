@@ -36,21 +36,9 @@ console.log(items[1]);
 items[1].textContent='Hello';
 */
 
-const main=document.getElementById('main-header');
-main.style.borderBottom='solid 3px #000'
+//ASSIGNMENT 5
 
-const formHeader = document.getElementsByClassName('title');
-console.log(formHeader);
-formHeader[0].style.fontWeight='bold';
+const li=document.getElementsByTagName('li');
+ li[4].style.fontWeight='bold';
 
-formHeader[0].style.background='green';
-
-//Assignment 4
-
-const listItem = document.getElementsByClassName('list-group-item');
-listItem[2].style.background='green';
-
-for(let i=0; i<listItem.length; i++){
-    listItem[i].style.fontWeight='bold';
-}
 
