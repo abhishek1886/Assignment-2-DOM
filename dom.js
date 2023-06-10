@@ -44,3 +44,13 @@ console.log(formHeader);
 formHeader[0].style.fontWeight='bold';
 
 formHeader[0].style.background='green';
+
+//Assignment 4
+
+const listItem = document.getElementsByClassName('list-group-item');
+listItem[2].style.background='green';
+
+for(let i=0; i<listItem.length; i++){
+    listItem[i].style.fontWeight='bold';
+}
+
