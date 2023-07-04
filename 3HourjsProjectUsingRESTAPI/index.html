@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Product listing</title>
+</head>
+<body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <h1>Product listing</h1>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h4>Add Products:</h4>
+            <form id="addForm" class="form">
+                <div class="row my-1">
+                    <label for="productPrice" class="col-auto form-control-label">Selling Price:</label>
+                    <input type="number" id="productPrice" class="col-4 form-control" value="">
+                </div>
+                <div class="row">
+                    <label for="productName" class="col-auto form-control-label">Product Name:</label>
+                    <input type="text" id="productName" class="col-4 form-control" value="">
+                </div>
+                <button class="btn-info my-2" id="submit">Add Product</button>
+            </form>
+        </div>
+        <div class="card card-body my-2">
+            <h5 class="card-header font-weight-bold">Products:</h5>
+            <ul id="products" class="list-group my-1">
+                
+            </ul>
+        </div>
+        <div class="card card-body">
+            <h5 id="totalAmountHeader">Total Value Worth of Products: <span id="totalAmount" class="font-weight-normal">Rs. 0</span></h5>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
